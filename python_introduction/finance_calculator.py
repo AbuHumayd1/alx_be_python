@@ -1,7 +1,7 @@
-user_monthly_income = int(input('Enter your monthly income: '))
-user_monthly_expenses = int(input('Enter your monthly expenses: '))
+monthly_income = int(input('Enter your monthly income: '))
+monthly_expenses = int(input('Enter your monthly expenses: '))
 
-monthly_savings = user_monthly_income - user_monthly_expenses
+monthly_savings = monthly_income - monthly_expenses
 print (f'Your monthly savings are ${monthly_savings}.')
 
 annual_interest_rate = 0.05
