@@ -13,7 +13,7 @@ def main():
 
         if choice == '1':
             while True:
-                item_name = input("Add your item: ")
+                item_name = input("Enter the item to add: ")
                 shopping_list.append(item_name)
                 print("Current list:", shopping_list)
 
