@@ -1,10 +1,10 @@
-def perform_operation(num1: float, num2: float, operation: str) -> float:
+def perform_operation(num1, num2, operation):
     """
     Perform basic arithmetic operations on two numbers.
 
     Parameters:
-    a (int or float): The first number.
-    b (int or float): The second number.
+    num1 (int or float): The first number.
+    num2 (int or float): The second number.
     operation (str): The operation to perform ('add', 'subtract', 'multiply', 'divide').
 
     Returns:
