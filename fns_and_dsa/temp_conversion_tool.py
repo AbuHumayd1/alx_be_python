@@ -23,6 +23,7 @@ try:
         raise ValueError("Invalid temperature unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
 
 except ValueError as e:
-    print(f"Error: {e}")
+    print("Invalid temperature. Please enter a numeric value."
+)
 
 
