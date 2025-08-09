@@ -7,27 +7,33 @@ class Book:
         self.title = title
         self.author = author
 
+    def __str__(self):
+        """String representation for a general book."""
+        return f"Book: {self.title} by {self.author}"
+
 
 # Derived Class - EBook
 class EBook(Book):
     def __init__(self, title, author, file_size):
-        """Initialize EBook with title, author, and file size in MB."""
-        super().__init__(title, author)  # Call base class constructor
+        """Initialize EBook with title, author, and file size in KB."""
+        super().__init__(title, author)
         self.file_size = file_size
 
     def __str__(self):
-        return f"EBook: {self.title} by {self.author} - {self.file_size}MB"
+        """String representation for an eBook."""
+        return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}KB"
 
 
 # Derived Class - PrintBook
 class PrintBook(Book):
     def __init__(self, title, author, page_count):
-        """Initialize PrintBook with title, author, and number of pages."""
-        super().__init__(title, author)  # Call base class constructor
+        """Initialize PrintBook with title, author, and page count."""
+        super().__init__(title, author)
         self.page_count = page_count
 
     def __str__(self):
-        return f"PrintBook: {self.title} by {self.author} - {self.page_count} pages"
+        """String representation for a print book."""
+        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 
 
 # Composition - Library
@@ -44,3 +50,4 @@ class Library:
         """Print the details of all books in the library."""
         for book in self.books:
             print(book)
+
